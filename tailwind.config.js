@@ -11,7 +11,7 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#3c4531",
+          DEFAULT: "#3d4a35",
           foreground: "#ffffff",
         },
         secondary: {
@@ -38,10 +38,10 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "background-dark": "#161a12",
-        "background-light": "#eef0eb",
-        "stone-matte": "#d5ddd0",
-        "fluid-dark": "#0d1009",
+        "background-dark": "#C2CCBA",
+        "background-light": "#E8EDE4",
+        "stone-matte": "#D0D8CB",
+        "fluid-dark": "#B0BBA8",
       },
       fontFamily: {
         display: ["Space Grotesk", "sans-serif"],

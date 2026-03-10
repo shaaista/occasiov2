@@ -43,34 +43,34 @@
 
 @layer base {
   :root {
-    --background: 92 25% 8%;
-    --foreground: 0 0% 98%;
-    --card: 92 25% 8%;
-    --card-foreground: 0 0% 98%;
-    --popover: 92 25% 8%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 91 16% 24%;
+    --background: 88 15% 76%;
+    --foreground: 92 22% 11%;
+    --card: 88 15% 79%;
+    --card-foreground: 92 22% 11%;
+    --popover: 88 15% 79%;
+    --popover-foreground: 92 22% 11%;
+    --primary: 92 14% 25%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 92 16% 13%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 92 16% 13%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 92 16% 13%;
-    --accent-foreground: 0 0% 98%;
+    --secondary: 88 12% 68%;
+    --secondary-foreground: 92 22% 11%;
+    --muted: 88 12% 68%;
+    --muted-foreground: 92 15% 35%;
+    --accent: 88 12% 68%;
+    --accent-foreground: 92 22% 11%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 92 16% 18%;
-    --input: 92 16% 18%;
-    --ring: 91 16% 24%;
+    --border: 88 12% 62%;
+    --input: 88 12% 62%;
+    --ring: 92 14% 25%;
     --radius: 0.625rem;
-    --sidebar-background: 92 25% 8%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 91 16% 24%;
+    --sidebar-background: 88 15% 76%;
+    --sidebar-foreground: 92 22% 11%;
+    --sidebar-primary: 92 14% 25%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 92 16% 13%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 92 16% 18%;
-    --sidebar-ring: 91 16% 24%;
+    --sidebar-accent: 88 12% 68%;
+    --sidebar-accent-foreground: 92 22% 11%;
+    --sidebar-border: 88 12% 62%;
+    --sidebar-ring: 92 14% 25%;
   }
 }
 
@@ -82,7 +82,7 @@
     /* scroll-behavior removed — Lenis handles smooth scroll */
   }
   body {
-    @apply bg-background-dark text-white font-display overflow-x-hidden;
+    @apply bg-background-dark text-[#1a2418] font-display overflow-x-hidden;
   }
 }
 
@@ -98,7 +98,7 @@
   }
 
   .liquid-bg {
-    background: #161a12;
+    background: #C2CCBA;
     position: relative;
     overflow: hidden;
   }
@@ -111,11 +111,11 @@
     height: 200%;
     background: conic-gradient(
       from 0deg at 50% 50%,
-      #161a12 0%,
-      #2e3829 25%,
-      #11140d 50%,
-      #1f2619 75%,
-      #161a12 100%
+      #C2CCBA 0%,
+      #ADBBA3 25%,
+      #CDD6C5 50%,
+      #B8C3AF 75%,
+      #C2CCBA 100%
     );
     animation: liquid-rotate 20s linear infinite;
     z-index: 0;
@@ -130,8 +130,8 @@
     height: 60%;
     background: radial-gradient(
       ellipse at center,
-      rgba(60, 69, 49, 0.25) 0%,
-      rgba(60, 69, 49, 0.10) 40%,
+      rgba(61, 74, 53, 0.12) 0%,
+      rgba(61, 74, 53, 0.04) 40%,
       transparent 70%
     );
     animation: liquid-pulse 8s ease-in-out infinite;
@@ -152,8 +152,8 @@
     background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
     box-shadow:
       inset -5px -5px 20px rgba(255,255,255,0.1),
-      inset 5px 5px 20px rgba(60, 69, 49, 0.3),
-      0 0 15px rgba(60, 69, 49, 0.4);
+      inset 5px 5px 20px rgba(61, 74, 53, 0.1),
+      0 0 15px rgba(61, 74, 53, 0.15);
     backdrop-filter: blur(2px) contrast(1.2) brightness(1.1);
     border: 1px solid rgba(255,255,255,0.3);
   }
@@ -174,7 +174,7 @@
     inset: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent 0%, rgb(60, 69, 49) 25%, rgb(46, 56, 41) 50%, rgb(31, 38, 25) 75%, transparent 100%);
+    background: conic-gradient(from 0deg, transparent 0%, rgb(61, 74, 53) 25%, rgb(80, 95, 69) 50%, rgb(100, 115, 88) 75%, transparent 100%);
     animation: spin-noise 4s linear infinite;
     z-index: -2;
     opacity: 0.6;
