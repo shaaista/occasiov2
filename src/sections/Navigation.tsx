@@ -71,7 +71,7 @@ export default function Navigation() {
             isScrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >
-          <span className="font-ciguatera text-xl tracking-wider">OCCASIO</span>
+          <span className="font-ciguatera text-xl tracking-wider">moments & memories</span>
         </div>
       </nav>
 

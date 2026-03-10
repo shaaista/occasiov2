@@ -177,9 +177,9 @@ export default function Hero() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 mix-blend-difference">
         <h1
           ref={titleRef}
-          className="font-serif-exp text-[8vw] leading-none tracking-tighter text-center"
+          className="font-serif-exp leading-none tracking-tighter text-center"
         >
-          <span className="block italic text-white/80">Occasio</span>
+          <span className="block italic text-white/80 text-[6vw]">moments & memories</span>
         </h1>
       </div>
     </section>
