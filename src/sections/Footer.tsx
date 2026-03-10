@@ -136,7 +136,7 @@ export default function Footer() {
           <div className="noise-btn-container">
             <div className="noise-btn-bg" />
             <div className="noise-texture" />
-            <button className="btn-inner bg-[#667558] text-white backdrop-blur-md border border-white/20 px-10 py-4 font-bold text-lg hover:bg-[#7a8a6a] transition-all shadow-lg">
+            <button className="btn-inner bg-[#3c4531] text-white backdrop-blur-md border border-white/20 px-10 py-4 font-bold text-lg hover:bg-[#505C45] transition-all shadow-lg">
               Start Designing
             </button>
           </div>
