@@ -53,25 +53,17 @@ function App() {
           </section>
 
           {/* Timeline — reveals via clipPath over pinned Hero */}
-          <div id="timeline" className="relative z-20 bg-[#EADDD7]">
+          <div id="timeline" className="relative z-20 bg-[#d5ddd0]">
             <Timeline />
           </div>
 
-          {/* Transition bridge: Stone → Dark (smooth color morph) */}
-          <div
-            className="relative z-20 h-[30vh] md:h-[50vh]"
-            style={{
-              background:
-                'linear-gradient(to bottom, #EADDD7 0%, #d4c0b8 12%, #b8948a 25%, #8a5c5e 40%, #5c3040 55%, #3a1a2a 72%, #2a1520 86%, #211119 100%)',
-            }}
-          />
 
           {/* Shared dark bg — Invitations + ChapterTransition as one continuous surface */}
           <div className="relative z-20 bg-background-dark">
             <div
               className="absolute inset-0 opacity-25 pointer-events-none"
               style={{
-                background: 'radial-gradient(ellipse at 40% 30%, rgba(230,25,128,0.12), transparent 60%), radial-gradient(ellipse at 70% 70%, rgba(74,13,46,0.2), transparent 50%)',
+                background: 'radial-gradient(ellipse at 40% 30%, rgba(102,117,88,0.12), transparent 60%), radial-gradient(ellipse at 70% 70%, rgba(80,92,69,0.2), transparent 50%)',
               }}
             />
             <Invitations />
@@ -86,14 +78,6 @@ function App() {
           {/* Quote breather section */}
           <QuoteSection />
 
-          {/* Transition bridge: Stone → Black (smooth color morph) */}
-          <div
-            className="relative z-30 h-[25vh] md:h-[40vh]"
-            style={{
-              background:
-                'linear-gradient(to bottom, #EADDD7 0%, #d4c0b8 10%, #b09080 22%, #7a5860 38%, #4a2838 52%, #2c1520 68%, #160a0e 82%, #000000 100%)',
-            }}
-          />
 
           {/* Footer */}
           <div id="footer" className="relative z-30">

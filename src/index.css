@@ -43,34 +43,34 @@
 
 @layer base {
   :root {
-    --background: 330 30% 9%;
+    --background: 92 20% 14%;
     --foreground: 0 0% 98%;
-    --card: 330 30% 9%;
+    --card: 92 20% 14%;
     --card-foreground: 0 0% 98%;
-    --popover: 330 30% 9%;
+    --popover: 92 20% 14%;
     --popover-foreground: 0 0% 98%;
-    --primary: 330 85% 50%;
+    --primary: 91 14% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 330 20% 15%;
+    --secondary: 92 13% 22%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 330 20% 15%;
+    --muted: 92 13% 22%;
     --muted-foreground: 0 0% 60%;
-    --accent: 330 20% 15%;
+    --accent: 92 13% 22%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 330 20% 20%;
-    --input: 330 20% 20%;
-    --ring: 330 85% 50%;
+    --border: 92 13% 27%;
+    --input: 92 13% 27%;
+    --ring: 91 14% 40%;
     --radius: 0.625rem;
-    --sidebar-background: 330 30% 9%;
+    --sidebar-background: 92 20% 14%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 330 85% 50%;
+    --sidebar-primary: 91 14% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 330 20% 15%;
+    --sidebar-accent: 92 13% 22%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 330 20% 20%;
-    --sidebar-ring: 330 85% 50%;
+    --sidebar-border: 92 13% 27%;
+    --sidebar-ring: 91 14% 40%;
   }
 }
 
@@ -98,7 +98,7 @@
   }
 
   .liquid-bg {
-    background: #211119;
+    background: #2a3025;
     position: relative;
     overflow: hidden;
   }
@@ -111,11 +111,11 @@
     height: 200%;
     background: conic-gradient(
       from 0deg at 50% 50%,
-      #211119 0%,
-      #4a0d2e 25%,
-      #1a0815 50%,
-      #3d1228 75%,
-      #211119 100%
+      #2a3025 0%,
+      #505C45 25%,
+      #1e2219 50%,
+      #384031 75%,
+      #2a3025 100%
     );
     animation: liquid-rotate 20s linear infinite;
     z-index: 0;
@@ -130,8 +130,8 @@
     height: 60%;
     background: radial-gradient(
       ellipse at center,
-      rgba(230, 25, 128, 0.18) 0%,
-      rgba(230, 25, 128, 0.06) 40%,
+      rgba(102, 117, 88, 0.18) 0%,
+      rgba(102, 117, 88, 0.06) 40%,
       transparent 70%
     );
     animation: liquid-pulse 8s ease-in-out infinite;
@@ -150,10 +150,10 @@
 
   .prism-lens {
     background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
-    box-shadow: 
+    box-shadow:
       inset -5px -5px 20px rgba(255,255,255,0.1),
-      inset 5px 5px 20px rgba(230, 25, 128, 0.2),
-      0 0 15px rgba(230, 25, 128, 0.3);
+      inset 5px 5px 20px rgba(102, 117, 88, 0.2),
+      0 0 15px rgba(102, 117, 88, 0.3);
     backdrop-filter: blur(2px) contrast(1.2) brightness(1.1);
     border: 1px solid rgba(255,255,255,0.3);
   }
@@ -174,7 +174,7 @@
     inset: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, transparent 0%, rgb(255, 100, 150) 25%, rgb(100, 150, 255) 50%, rgb(255, 200, 100) 75%, transparent 100%);
+    background: conic-gradient(from 0deg, transparent 0%, rgb(102, 117, 88) 25%, rgb(80, 92, 69) 50%, rgb(56, 64, 49) 75%, transparent 100%);
     animation: spin-noise 4s linear infinite;
     z-index: -2;
     opacity: 0.6;

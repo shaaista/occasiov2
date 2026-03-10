@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 // Each half mirrors the Hero's exact appearance (dark top / stone bottom split)
 // so it looks like the actual Hero page splitting open to reveal Invitations.
-const HERO_HALF = 'linear-gradient(to bottom, #211119 50%, #EADDD7 50%)';
+const HERO_HALF = 'linear-gradient(to bottom, #2a3025 50%, #d5ddd0 50%)';
 
 export default function AnimatedScrollSection() {
   const [split, setSplit] = useState(false);
