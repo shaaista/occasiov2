@@ -24,7 +24,7 @@ const floatingImages = [
   {
     src: 'https://static.wixstatic.com/media/e64ad3_c10c7de7620f4b5cbb97d15697f6f654~mv2.jpg/v1/fill/w_600,h_800,q_90,enc_auto,quality_auto/e64ad3_c10c7de7620f4b5cbb97d15697f6f654~mv2.jpg',
     alt: 'Reception venue decor',
-    className: 'w-[160px] h-[210px] bottom-[18%] left-[15%]',
+    className: 'w-[160px] h-[210px] bottom-[12%] left-[15%]',
     radius: '30% 70% 70% 30% / 30% 30% 70% 70%',
     delay: 0.3,
     float: 'animate-float-fast',
@@ -32,7 +32,7 @@ const floatingImages = [
   {
     src: 'https://static.wixstatic.com/media/e64ad3_7868060089754a74b7376491c2cb8592~mv2.jpg/v1/fill/w_600,h_800,q_90,enc_auto,quality_auto/e64ad3_7868060089754a74b7376491c2cb8592~mv2.jpg',
     alt: 'Reception celebration',
-    className: 'w-[200px] h-[260px] bottom-[12%] right-[10%]',
+    className: 'w-[200px] h-[260px] bottom-[6%] right-[10%]',
     radius: '50% 50% 20% 80% / 25% 80% 20% 75%',
     delay: 0.2,
     float: 'animate-float-slow',
@@ -174,12 +174,12 @@ export default function Hero() {
       ))}
 
       {/* Center Content - Overlay */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 mix-blend-difference">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[30]">
         <h1
           ref={titleRef}
           className="font-serif-exp leading-none tracking-tighter text-center"
         >
-          <span className="block italic text-white/80 text-[6vw]">moments & memories</span>
+          <span className="block italic text-[#556c4d] text-[6vw]">moments & memories</span>
         </h1>
       </div>
     </section>

@@ -229,7 +229,7 @@ export default function Timeline() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full py-32 bg-[#EADDD7] text-background-dark overflow-hidden flex flex-col justify-start items-center"
+      className="relative w-full py-32 bg-[#EADDD7] text-[#e4eee1] overflow-hidden flex flex-col justify-start items-center"
     >
       {/* Stone texture overlay — matches DecorGifts section */}
       <div
@@ -238,18 +238,19 @@ export default function Timeline() {
           backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0yNSOWSBJLsv1-47TiuxQ15AFQ4nsrk2tyl20R-zvNNsiDXBNDhZVYz1yHqSCTtqtGcVjl35j2rrDIrA-d5xW6tM2FPDinMxC7wGNXKzBCT0JhfwdSkLFQPVqU1yfc1GtqRHSfxSmlitg3lWmrbcCqzLdzR4XsiD9nN9-_O7fp4ViDdX7MFMvLLa9exuWvETBq8HCVRb7NcpP7tWvqDoEWCeegHipJmlKBCM4gpRO9AROi6bPaa2gmQvHKabiYnelhLueCkgQ9QIe')`,
         }}
       />
+      <div className="absolute inset-0 z-[1] bg-[#111914]/70 pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10 max-w-6xl">
 
         {/* Heading */}
         <div ref={headingRef} className="text-center mb-16 relative z-20">
-          <span className="text-xs tracking-[0.2em] font-bold text-primary mb-4 uppercase block font-ciguatera">
+          <span className="text-xs tracking-[0.2em] font-bold text-[#9cb092] mb-4 uppercase block font-ciguatera">
             THE JOURNEY
           </span>
           <h2 className="text-5xl md:text-6xl font-serif-exp mb-8 leading-tight">
             From Invitation <br /> to Atmosphere.
           </h2>
-          <p className="text-lg opacity-70 font-display leading-relaxed max-w-md mx-auto">
+          <p className="text-lg text-[#b8c8b6] font-display leading-relaxed max-w-md mx-auto">
             Every celebration unfolds in stages. Each step builds toward the experience.
           </p>
         </div>
@@ -273,9 +274,9 @@ export default function Timeline() {
                    C100,600 60,600 60,700
                    S 60,800 60,800"
                 fill="none"
-                stroke="#211119"
+                stroke="#9cb092"
                 strokeLinecap="round"
-                strokeOpacity="0.2"
+                strokeOpacity="0.35"
                 strokeWidth="1.5"
               />
               {dots.map((d, i) => (
@@ -285,7 +286,7 @@ export default function Timeline() {
                   cx={d.cx}
                   cy={d.cy}
                   r="6"
-                  fill="#211119"
+                  fill="#9cb092"
                 />
               ))}
             </svg>
@@ -300,11 +301,11 @@ export default function Timeline() {
                 className={step.textGridClass}
               >
                 <div className={step.textAlign === 'right' ? 'text-right max-w-xs' : 'text-left max-w-xs'}>
-                  <span className="text-sm font-bold tracking-widest mb-2 opacity-50 font-mono text-primary block">
+                  <span className="text-xs md:text-sm font-display font-semibold tracking-[0.2em] mb-2 opacity-70 text-[#9cb092] block">
                     {step.number} — {step.title}
                   </span>
                   <h3 className="text-3xl font-serif-exp mb-3">{step.heading}</h3>
-                  <p className="opacity-60 text-sm leading-relaxed">
+                  <p className="text-[#b2c3b1] text-sm leading-relaxed">
                     {step.description}
                   </p>
                 </div>

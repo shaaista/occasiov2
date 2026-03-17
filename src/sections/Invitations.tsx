@@ -98,18 +98,18 @@ export default function Invitations() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full py-32 overflow-hidden"
+      className="relative w-full py-32 overflow-hidden text-[#1f2a1c]"
     >
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
         <div ref={headingRef} className="flex flex-col md:flex-row items-start justify-between mb-24">
           <div className="md:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-serif-exp italic mb-6 text-white leading-tight">
+            <h2 className="text-4xl md:text-5xl font-serif-exp italic mb-6 text-[#1b2618] leading-tight">
               Design Invitations That Move <br />
               <span className="text-primary not-italic font-agatho">With Your Celebration.</span>
             </h2>
-            <p className="text-gray-400 font-display text-lg leading-relaxed max-w-md">
+            <p className="text-[#495b48] font-display text-lg leading-relaxed max-w-md">
               Our invitations aren't static cards. They're living canvases that carry the emotion of your moment.
             </p>
           </div>
@@ -151,10 +151,10 @@ export default function Invitations() {
 
               {/* Card Info */}
               <div className="mt-6 text-center w-full">
-                <h3 className="text-xl font-serif-exp">
+                <h3 className="text-xl font-serif-exp text-[#1f2a1c]">
                   {card.title}
                 </h3>
-                <p className="text-xs tracking-widest text-primary mt-2">
+                <p className="text-xs tracking-widest text-[#3f5240] mt-2">
                   {card.subtitle}
                 </p>
               </div>

@@ -57,29 +57,30 @@ export default function QuoteSection() {
     >
       {/* Subtle texture overlay — matches DecorGifts & Timeline */}
       <div
-        className="absolute inset-0 opacity-20 mix-blend-multiply pointer-events-none"
+        className="absolute inset-0 z-0 opacity-20 mix-blend-multiply pointer-events-none"
         style={{
           backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0yNSOWSBJLsv1-47TiuxQ15AFQ4nsrk2tyl20R-zvNNsiDXBNDhZVYz1yHqSCTtqtGcVjl35j2rrDIrA-d5xW6tM2FPDinMxC7wGNXKzBCT0JhfwdSkLFQPVqU1yfc1GtqRHSfxSmlitg3lWmrbcCqzLdzR4XsiD9nN9-_O7fp4ViDdX7MFMvLLa9exuWvETBq8HCVRb7NcpP7tWvqDoEWCeegHipJmlKBCM4gpRO9AROi6bPaa2gmQvHKabiYnelhLueCkgQ9QIe')`,
         }}
       />
+      <div className="absolute inset-0 z-[1] bg-[#111914]/70 pointer-events-none" />
 
       <div className="text-center z-10 px-6 flex flex-col items-center">
         {/* Decorative lines + quote */}
         <div className="flex items-center gap-6 md:gap-10 w-full max-w-2xl">
           <div
             ref={lineLeftRef}
-            className="flex-1 h-px bg-background-dark/20 origin-right"
+            className="flex-1 h-px bg-white/25 origin-right"
           />
           <p
             ref={quoteRef}
-            className="text-lg md:text-2xl font-serif-exp italic text-background-dark/80 leading-relaxed"
+            className="text-lg md:text-2xl font-serif-exp italic text-[#e3eee2] leading-relaxed"
           >
             "An invitation sets the tone.<br className="hidden md:block" />
             The details complete the story."
           </p>
           <div
             ref={lineRightRef}
-            className="flex-1 h-px bg-background-dark/20 origin-left"
+            className="flex-1 h-px bg-white/25 origin-left"
           />
         </div>
       </div>

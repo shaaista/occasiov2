@@ -88,7 +88,7 @@ export default function ChapterTransition() {
     // No border, no separate bg — flows directly from Invitations as one surface
     <section
       ref={sectionRef}
-      className="relative w-full py-20 overflow-hidden"
+      className="relative w-full py-20 overflow-hidden text-[#1f2a1c]"
     >
 
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center text-center">
@@ -114,7 +114,7 @@ export default function ChapterTransition() {
             as='h2'
             variants={blurSlideVariants}
             trigger={trigger}
-            className="text-3xl md:text-5xl font-serif-exp text-white leading-tight"
+            className="text-3xl md:text-5xl font-serif-exp text-[#1b2618] leading-tight"
           >
             Once the invite is sent, the scene comes next.
           </TextEffect>
@@ -128,7 +128,7 @@ export default function ChapterTransition() {
             variants={blurSlideVariants}
             trigger={trigger}
             delay={0.3}
-            className="text-gray-400 font-display text-lg leading-relaxed max-w-xl"
+            className="text-[#4a5d49] font-display text-lg leading-relaxed max-w-xl"
           >
             Now the space takes shape — décor, gifts, and details that make it feel intentional. Everything stays cohesive. Everything stays easy.
           </TextEffect>

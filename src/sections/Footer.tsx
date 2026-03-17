@@ -116,7 +116,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 relative z-10 text-center">
         {/* Icon */}
         <div ref={iconRef} className="mb-12">
-          <span className="material-icons text-6xl text-primary animate-pulse">all_inclusive</span>
+          <span className="material-icons text-6xl text-[#9cb092] animate-pulse">all_inclusive</span>
         </div>
 
         {/* Heading */}
@@ -136,7 +136,7 @@ export default function Footer() {
           <div className="noise-btn-container">
             <div className="noise-btn-bg" />
             <div className="noise-texture" />
-            <button className="btn-inner bg-[#3d4a35] text-white backdrop-blur-md border border-black/10 px-10 py-4 font-bold text-lg hover:bg-[#4d5a44] transition-all shadow-lg">
+            <button className="btn-inner bg-[#3d4a35] text-white backdrop-blur-md border border-black/10 px-10 py-4 font-display font-semibold text-lg hover:bg-[#4d5a44] transition-all shadow-lg">
               Start Designing
             </button>
           </div>
@@ -145,7 +145,7 @@ export default function Footer() {
           <div className="noise-btn-container">
             <div className="noise-btn-bg" />
             <div className="noise-texture" />
-            <button className="btn-inner bg-gradient-to-br from-neutral-800 to-neutral-900 text-white border border-white/10 px-10 py-4 font-bold text-lg hover:from-neutral-700 hover:to-neutral-800 transition-all shadow-lg">
+            <button className="btn-inner bg-gradient-to-br from-neutral-800 to-neutral-900 text-white border border-white/10 px-10 py-4 font-display font-semibold text-lg hover:from-neutral-700 hover:to-neutral-800 transition-all shadow-lg">
               Explore the Shop
             </button>
           </div>
@@ -154,17 +154,17 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div
           ref={footerBottomRef}
-          className="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-mono"
+          className="mt-24 pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-sm text-[#b4beb2] font-display"
         >
           <p>© 2023 MOMENTS & MEMORIES. THE ART OF CELEBRATION.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="#" className="hover:text-[#9cb092] transition-colors">
               Instagram
             </a>
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="#" className="hover:text-[#9cb092] transition-colors">
               Pinterest
             </a>
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="#" className="hover:text-[#9cb092] transition-colors">
               Contact
             </a>
           </div>

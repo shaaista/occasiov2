@@ -50,19 +50,23 @@ export default function Navigation() {
         ref={navRef}
         className={`fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center transition-all duration-500 ${
           isScrolled
-            ? 'bg-background-dark/80 backdrop-blur-md border-b border-white/5'
-            : 'bg-transparent'
+            ? 'bg-[#111914]/84 backdrop-blur-md border-b border-white/10 text-[#e2ebde]'
+            : 'bg-transparent text-[#f2f6ef]'
         }`}
       >
         {/* Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="pointer-events-auto cursor-pointer group flex flex-col items-start"
+          className="pointer-events-auto cursor-pointer group flex flex-col items-start font-display"
         >
           <span className="block text-xs tracking-[0.3em] font-bold mb-1 opacity-70 group-hover:opacity-100 transition-opacity">
             {isMenuOpen ? 'CLOSE' : 'MENU'}
           </span>
-          <div className="h-[1px] w-8 bg-white group-hover:w-16 transition-all duration-300" />
+          <div
+            className={`h-[1px] w-8 group-hover:w-16 transition-all duration-300 ${
+              isScrolled ? 'bg-[#e2ebde]' : 'bg-[#f2f6ef]'
+            }`}
+          />
         </button>
 
         {/* Center OCCASIO logo — appears when scrolled */}
@@ -71,7 +75,7 @@ export default function Navigation() {
             isScrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >
-          <span className="font-ciguatera text-xl tracking-wider">moments & memories</span>
+          <span className="font-serif-exp italic text-xl tracking-wide">moments & memories</span>
         </div>
       </nav>
 
@@ -84,7 +88,7 @@ export default function Navigation() {
 
       {/* Full Screen Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-background-dark/95 backdrop-blur-xl transition-all duration-700 ${
+        className={`fixed inset-0 z-40 bg-[#111914]/95 backdrop-blur-xl transition-all duration-700 ${
           isMenuOpen
             ? 'opacity-100 pointer-events-auto'
             : 'opacity-0 pointer-events-none'
@@ -102,7 +106,7 @@ export default function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`block text-4xl md:text-6xl font-serif-exp text-white hover:text-primary transition-all duration-300 transform ${
+                className={`block text-4xl md:text-6xl font-serif-exp text-[#e8f0e6] hover:text-[#9cb092] transition-all duration-300 transform ${
                   isMenuOpen
                     ? 'translate-x-0 opacity-100'
                     : '-translate-x-10 opacity-0'
@@ -123,11 +127,11 @@ export default function Navigation() {
             }`}
             style={{ transitionDelay: isMenuOpen ? '500ms' : '0ms' }}
           >
-            <div className="text-sm text-white/50">
+            <div className="text-sm text-white/50 font-display">
               <p>Every Occasion Begins</p>
               <p>With a Moment</p>
             </div>
-            <div className="text-right text-sm text-white/50">
+            <div className="text-right text-sm text-white/50 font-display">
               <p>The Art of</p>
               <p>Celebration</p>
             </div>

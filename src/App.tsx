@@ -53,7 +53,7 @@ function App() {
           </section>
 
           {/* Timeline — reveals via clipPath over pinned Hero */}
-          <div id="timeline" className="relative z-20 bg-[#d5ddd0]">
+          <div id="timeline" className="relative z-20 bg-[#111914]">
             <Timeline />
           </div>
 

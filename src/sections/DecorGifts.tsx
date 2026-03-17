@@ -148,22 +148,23 @@ export default function DecorGifts() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full py-32 bg-[#EADDD7] text-background-dark overflow-hidden"
+      className="relative w-full py-32 bg-[#EADDD7] text-[#e4eee1] overflow-hidden"
     >
       {/* Texture overlay */}
       <div
-        className="absolute inset-0 opacity-30 mix-blend-multiply pointer-events-none"
+        className="absolute inset-0 z-0 opacity-30 mix-blend-multiply pointer-events-none"
         style={{
           backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0yNSOWSBJLsv1-47TiuxQ15AFQ4nsrk2tyl20R-zvNNsiDXBNDhZVYz1yHqSCTtqtGcVjl35j2rrDIrA-d5xW6tM2FPDinMxC7wGNXKzBCT0JhfwdSkLFQPVqU1yfc1GtqRHSfxSmlitg3lWmrbcCqzLdzR4XsiD9nN9-_O7fp4ViDdX7MFMvLLa9exuWvETBq8HCVRb7NcpP7tWvqDoEWCeegHipJmlKBCM4gpRO9AROi6bPaa2gmQvHKabiYnelhLueCkgQ9QIe')`,
         }}
       />
+      <div className="absolute inset-0 z-[1] bg-[#111914]/70 pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
         <div ref={headingRef} className="flex flex-col items-center mb-32">
           <h2 className="text-5xl font-serif-exp italic text-center relative z-10">
             The room, <br />
-            <span className="text-primary not-italic font-bold font-agatho">curated in stone.</span>
+            <span className="text-[#9cb092] not-italic font-bold font-agatho">curated in stone.</span>
           </h2>
         </div>
 
@@ -175,18 +176,18 @@ export default function DecorGifts() {
             className="flex flex-col md:flex-row items-center justify-around w-full group"
           >
             {/* Text Content */}
-            <div className="order-2 md:order-1 md:w-1/3 p-8 border-l border-background-dark/20 relative">
+            <div className="order-2 md:order-1 md:w-1/3 p-8 border-l border-white/15 relative">
               <div
                 ref={decorLineRef}
-                className="absolute top-0 left-0 w-1 bg-primary origin-top"
+                className="absolute top-0 left-0 w-1 bg-[#9cb092] origin-top"
               />
-              <h3 className="text-4xl font-display font-bold mb-2">Décor & Ambience</h3>
-              <p className="text-sm font-mono opacity-60 mb-6 uppercase">
+              <h3 className="text-4xl font-serif-exp leading-tight mb-2">Décor & Ambience</h3>
+              <p className="text-xs md:text-sm font-display tracking-[0.18em] text-[#b2c3b1] mb-6 uppercase">
                 TABLESCAPES • LIGHTING • CENTERPIECES
               </p>
               <div className="flex items-center justify-between">
                 <span className="text-lg font-bold opacity-0"></span>
-                <button className="px-6 py-3 border border-background-dark hover:bg-background-dark hover:text-[#EADDD7] transition-colors uppercase text-xs tracking-widest">
+                <button className="px-6 py-3 border border-white/35 hover:bg-white hover:text-[#111914] transition-colors uppercase text-xs tracking-widest font-display font-semibold">
                   Explore Décor
                 </button>
               </div>
@@ -194,11 +195,11 @@ export default function DecorGifts() {
 
             {/* Image */}
             <div className="order-1 md:order-2 md:w-1/2 relative h-[500px] w-full md:w-auto">
-              <div className="absolute -top-10 -right-10 w-full h-full border border-background-dark/10 z-0" />
+              <div className="absolute -top-10 -right-10 w-full h-full border border-white/15 z-0" />
               <img
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAscIZcqGph6yS58AlvzkmiILkufMC2Qsyn_kNSTcHu67p2pJ8lKRDQoaaIsRpZGb6R45h9jOn9bfO3N-qMlBNsg-HSOu2c6GxtgBZJTE4-Zrg-blRLRDMFFwFHTKpSDXHFdZHcdMrVyd9gZvhioPy_Xz8XciGFzYN8zA9ivrcu7Pkp6-amSycXRYku1_BOR7HWPy59rLG6vdLPT1zIP9qrbKmea348EV0bPPUMkjTg6ZIHGbN_Ay4Td4DERXapdMYM6Xxb3qnrG4d"
                 alt="Artistic sculptural candle on stone surface"
-                className="relative z-10 w-full h-full object-cover mix-blend-multiply filter contrast-125 grayscale group-hover:grayscale-0 transition-all duration-700"
+                className="relative z-10 w-full h-full object-cover filter contrast-110 brightness-90 grayscale group-hover:grayscale-0 transition-all duration-700"
               />
             </div>
           </div>
@@ -210,27 +211,27 @@ export default function DecorGifts() {
           >
             {/* Image */}
             <div className="md:w-1/2 relative h-[500px] w-full md:w-auto">
-              <div className="absolute -bottom-10 -left-10 w-full h-full border border-background-dark/10 z-0" />
+              <div className="absolute -bottom-10 -left-10 w-full h-full border border-white/15 z-0" />
               <img
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKXbAh2Ffrblnigc9B5ne5rLeB6kMCvIHjPqbolKY7k3_DI90gXTEHT2Owtc5GAzGBLRHBjqraO65oyAsAEPCnJ-FhF5gXxu19myQ-4nlnQo0AyAXPAITSkbc2yupJpZf-78oj6X9DONdaAAXrcW_pGFmR96xbjgWnajeWxDJeGT5xL5PGtfTUkJ87CO4pHt7MpwdcyisSPK-hig-8CiZ5PW1zrLoWcvjHKzDqXkJ0wh5DsFs42IwW8JWSTmVNf7qlg40Xk_cskrQJ"
                 alt="Ceramic minimalist vase with dried flowers"
-                className="relative z-10 w-full h-full object-cover mix-blend-multiply filter contrast-125 grayscale group-hover:grayscale-0 transition-all duration-700"
+                className="relative z-10 w-full h-full object-cover filter contrast-110 brightness-90 grayscale group-hover:grayscale-0 transition-all duration-700"
               />
             </div>
 
             {/* Text Content */}
-            <div className="md:w-1/3 p-8 border-r border-background-dark/20 relative text-right">
+            <div className="md:w-1/3 p-8 border-r border-white/15 relative text-right">
               <div
                 ref={giftLineRef}
-                className="absolute top-0 right-0 w-1 bg-primary origin-top"
+                className="absolute top-0 right-0 w-1 bg-[#9cb092] origin-top"
               />
-              <h3 className="text-4xl font-display font-bold mb-2">Return Gifts</h3>
-              <p className="text-sm font-mono opacity-60 mb-6 uppercase">
+              <h3 className="text-4xl font-serif-exp leading-tight mb-2">Return Gifts</h3>
+              <p className="text-xs md:text-sm font-display tracking-[0.18em] text-[#b2c3b1] mb-6 uppercase">
                 CURATED • PERSONALIZED • FESTIVE
               </p>
               <div className="flex items-center justify-between flex-row-reverse">
                 <span className="text-lg font-bold opacity-0"></span>
-                <button className="px-6 py-3 border border-background-dark hover:bg-background-dark hover:text-[#EADDD7] transition-colors uppercase text-xs tracking-widest">
+                <button className="px-6 py-3 border border-white/35 hover:bg-white hover:text-[#111914] transition-colors uppercase text-xs tracking-widest font-display font-semibold">
                   Shop Gifts
                 </button>
               </div>
